@@ -33,5 +33,5 @@ coverage/
 turbo/
 
 # Postgres
-postgres_data/
+/postgres_data/
 
