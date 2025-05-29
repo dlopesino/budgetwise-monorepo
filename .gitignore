@@ -30,3 +30,5 @@ coverage/
 
 # Turborepo cache
 turbo/
+
+.DS_Store
