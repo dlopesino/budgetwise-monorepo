@@ -1,0 +1,23 @@
+
+services:
+  postgres-db:
+    image: postgres:latest
+    restart: unless-stopped
+    container_name: postgres_budgetwise
+    environment:
+      POSTGRES_DB: budgetwise
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    networks:
+      - budgetwise_network
+
+volumes:
+  postgres_data:
+
+networks:
+  budgetwise_network:
+    driver: bridge
