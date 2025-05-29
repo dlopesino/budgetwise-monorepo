@@ -19,6 +19,7 @@ yarn-error.log*
 
 # VSCode
 .vscode/
+.DS_Store
 
 # Prisma generated files
 prisma/dev.db
@@ -31,4 +32,6 @@ coverage/
 # Turborepo cache
 turbo/
 
-.DS_Store
+# Postgres
+postgres_data/
+
